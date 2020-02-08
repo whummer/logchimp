@@ -1,0 +1,18 @@
+{
+	"plugins": [
+		"stylelint-prettier",
+		"stylelint-color-format",
+		"stylelint-scss"
+	],
+	"extends": [
+		"stylelint-prettier/recommended"
+	],
+	"rules": {
+		"prettier/prettier": true,
+		"function-comma-space-after": "always",
+		"color-format/format": {
+			"format": "rgba"
+		},
+		"scss/selector-no-redundant-nesting-selector": true
+	}
+}
