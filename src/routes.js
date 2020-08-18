@@ -19,6 +19,11 @@ const routes = [
 		path: "/post/:slug/edit",
 		name: "PostEdit",
 		component: require("./pages/post/Edit").default
+	},
+	{
+		path: "/verify",
+		name: "EmailVerification",
+		component: require("./pages/EmailVerification").default
 	}
 ];
 
