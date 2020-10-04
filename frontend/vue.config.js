@@ -5,5 +5,8 @@ module.exports = {
 				additionalData: `@import "@/styles/variables.sass";`
 			}
 		}
+	},
+	devServer: {
+		disableHostCheck: true
 	}
 };

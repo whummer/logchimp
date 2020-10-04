@@ -13,12 +13,12 @@ module.exports = {
 	extends: [
 		"eslint:recommended",
 		"plugin:vue/essential",
-		"plugin:prettier/recommended",
+		// "plugin:prettier/recommended",
 		"plugin:jest/recommended",
 		"plugin:jest/style"
 	],
 	rules: {
-		"prettier/prettier": 1,
+		// "prettier/prettier": 1,
 		camelcase: 1,
 		"no-console": 1,
 		"vue/camelcase": "error"

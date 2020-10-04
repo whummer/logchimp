@@ -13,7 +13,7 @@ exports.login = async (req, res) => {
 	const password = req.body.password;
 
 	try {
-		const getAuthUser = await getUser(emailAddress);
+		const getAuthUser = await getUser(emailAddress, password);
 
 		if (getAuthUser) {
 			const validateUserPassword = await validatePassword(

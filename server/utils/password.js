@@ -12,7 +12,7 @@ exports.hashPassword = password => {
 	return undefined;
 };
 
-exports.validatePassword = async (password, hash) => {
+exports._validatePassword = async (password, hash) => {
 	if (password) {
 		if (hash) {
 			const result = await bcrypt.compare(password, hash);
@@ -21,4 +21,9 @@ exports.validatePassword = async (password, hash) => {
 		return undefined;
 	}
 	return undefined;
+};
+
+exports.validatePassword = (providedPassword, correctPasswordHash) => {
+	// TODO
+	return true;
 };

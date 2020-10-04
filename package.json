@@ -7,11 +7,11 @@
 		"frontend"
 	],
 	"scripts": {
-		"frontend:dev": "cd frontend && vue-cli-service serve",
-		"frontend:build": "cd frontend && vue-cli-service build",
+		"frontend:dev": "cd frontend && npx vue-cli-service serve",
+		"frontend:build": "cd frontend && npx vue-cli-service build",
 		"frontend:lint": "cd frontend && vue-cli-service lint",
 		"server:dev": "cd server && nodemon app.js",
-		"server:start": "cd server && node app.js",
+		"server:start": "cd server && npx node app.js",
 		"server:test": "jest --config ./server/jest.config.js",
 		"eslint:fix": "eslint --fix -c ./.eslintrc.js ./"
 	},

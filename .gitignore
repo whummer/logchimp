@@ -21,3 +21,9 @@ yarn-error.log*
 *.njsproj
 *.sln
 *.sw?
+
+
+frontend/dist/
+frontend/package-lock.json
+package-lock.json
+server/package-lock.json

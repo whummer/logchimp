@@ -43,9 +43,11 @@
 						<Button @click="login" type="text">
 							Login
 						</Button>
+						<!--
 						<Button @click="join" type="outline">
 							Create an account
 						</Button>
+						-->
 					</div>
 				</nav>
 			</div>

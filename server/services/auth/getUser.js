@@ -4,7 +4,18 @@ const database = require("../../database");
 // utils
 const logger = require("../../utils/logger");
 
-const getUser = async emailAddress => {
+const getUser = (emailAddress, password) => {
+	const getAuthUser = {
+		userId: 'user123',
+		firstname: 'First',
+		lastname: 'Last',
+		emailAddress
+	};
+	// TODO
+	return getAuthUser;
+};
+
+const _getUser = async emailAddress => {
 	try {
 		const users = await database
 			.select()
